@@ -1,0 +1,149 @@
+button {
+    background-color:lightblue;
+    color:white;
+
+}
+
+
+
+
+:root {
+	--bg-color: #ECF0F3;
+	--front-color: #E3E6EC;
+}
+   
+body {
+	background-color: var(--bg-color);
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	display: flex;
+	margin: 25px auto 25px;
+	width: 1200px;
+}
+
+.col {
+	flex: 1;
+	width: 30%;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+
+/* Input - Начало */
+input[type="number"] {
+    width: 125px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid var(--front-color);
+    background: #FFF;
+    border-radius: 8px;
+    color:#000;
+}
+/** Input - Наведение **/
+	input[type="number"]:hover {
+        outline:none;
+        border-color:#2196F3;
+}
+/** Input - Фокус **/
+    input[type="number"]:focus {
+       outline:none;
+       border-color:#2196F3;
+}
+/** Input - Неверное значение **/
+    input[type="number"]:required:invalid {
+        border: 2px solid #CC3333;
+}
+/** Input - Верное значение **/
+    input[type="number"]:required:valid {
+        border: 2px solid #44944A;
+}
+/* Input - Конец */
+
+
+/* Shape - Начало */
+.shape {
+	margin: 25px auto 50px;
+}
+/** Shape - Площадь **/
+  .shape-square {
+    border-radius: 35px;
+    /* height: 275px;
+    width: 275px; */
+	min-height: auto;
+	min-width: auto;
+	padding: 30px 20px 30px 20px;
+}
+/** Shape - Тень **/
+  .shape-drop-shadow {
+    background-color: var(--front-color);
+    box-shadow: -12px -12px 30px 5px rgba(255, 255, 255, 0.9), 12px 12px 30px 5px rgba(50, 58, 73, 0.2);
+}
+/* Shape - Конец */
+
+
+/* Button - Начало */
+.btn {
+	cursor: pointer;
+    font-size: 20px;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 40px;
+    color: #6D7587;
+    background-color: var(--front-color);
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, .2),
+                inset 7px 7px 15px rgba(55, 84, 170, 0),
+                inset -7px -7px 20px rgba(255, 255, 255, 0),
+                0px 0px 4px rgba(255, 255, 255, 0) !important;
+    transition: box-shadow .25s ease !important;
+}
+/** Button - Нажата **/
+	.btn:active {
+    	box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                	-7px -7px 20px rgba(255, 255, 255, 1),
+                	inset 0px 0px 4px rgba(255, 255, 255, 0),
+                	inset 7px 7px 15px rgba(55, 84, 170, .15),
+                	inset -7px -7px 20px rgba(255, 255, 255, 1),
+                	0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+/** Button - Фокус **/
+	.btn:focus {
+		outline:none !important;
+}
+/** Button - Наведение **/
+	.btn:hover {
+		color: #42AAFF;
+		text-shadow: #AFDAFC 1px 0 10px;
+}
+/* Button - Конец */
+
+
+/* Button Blue - Начало */
+.btn_blue {
+	background-color: #4B70E2;
+	color: #F9F9F9;
+}
+/* Button Blue - Наведение */
+	.btn_blue:hover {
+		color: #F9F9F9;
+		text-shadow: #AFDAFC 1px 0 10px;
+}
+/* Button Blue - Нажата */
+	.btn_blue:active {
+    	box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                	0px 0px 0px,
+                	inset 0px 0px 4px rgba(255, 255, 255, 0),
+                	inset 7px 7px 15px rgba(55, 84, 170, .15),
+                	inset -7px -7px 20px rgba(120, 148, 235, 1),
+                	0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+/* Button Blue - Конец */
